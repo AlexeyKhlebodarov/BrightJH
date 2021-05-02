@@ -3,10 +3,6 @@
     display: block
     position: absolute
 
-@mixin lgdesktop
-    @media screen and (max-width: 1440px)
-        @content
-
 @mixin desktop
     @media screen and (max-width: 1200px)
         @content
@@ -19,12 +15,8 @@
     @media screen and (max-width: 768px)
         @content
 
-@mixin smtablets
-    @media screen and (max-width: 670px)
-        @content
-
 @mixin phones
-    @media screen and (max-width: 480px)
+    @media screen and (max-width: 576px)
         @content
 
 @mixin xsphones

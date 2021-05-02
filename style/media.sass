@@ -1,1 +1,29 @@
 @import "mixins.sass"
+
+//HEADER>>>
+
+.header
+    @include tablets
+        &-nav
+            &__links
+                display: none
+            &__menu
+                display: block
+        &-content
+            text-align: center
+
+//ABOUT>>>
+
+.about
+    @include tablets
+        text-align: center
+
+//SERVICE>>>
+
+.service
+    &-main
+        &__item
+            @include laptop
+                flex: 0 0 48%
+            @include phones
+                flex: 0 0 100%
