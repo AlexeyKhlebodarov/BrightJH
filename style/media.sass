@@ -27,3 +27,41 @@
                 flex: 0 0 48%
             @include phones
                 flex: 0 0 100%
+
+//INTEGRATION>>>
+
+.integration
+    @include laptop
+        &-stat__item
+            flex-direction: column
+        &-main
+            p
+                padding-right: 60px
+    @include tablets
+        text-align: center
+        &-main
+            p
+                padding-right: 0
+
+//CONTACT>>>
+
+.contact
+    @include tablets
+        text-align: center
+        &__pic
+            padding-bottom: 50px
+
+//FOOTER
+
+.footer
+    @include tablets
+        &-item
+            margin-bottom: 50px
+            &__link
+                display: inline-block
+                margin: 0 30px 10px 0
+    @include phones
+        text-align: center
+        &-item__link
+            display: block
+            margin-right: 0
